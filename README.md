@@ -7,7 +7,7 @@
   <br>
 </h1>
 
-<h4 align="center">Sobre
+<h4 align="center">About  </p>
 An example of using <a href="https://www.sqlite.org/index.html" target="_blank">SQLite</a> with <a href="https://docs.rs/sqlx/latest/sqlx" target="_blank">sqlx</a> , without any ORM, using just Native_tls async.</h4>
 
 <p align="center">
