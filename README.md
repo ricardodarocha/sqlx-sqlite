@@ -35,10 +35,11 @@ struct User {
     age: i64,
  }
 
-//async
+async fn get_all() -> Vec<User> {
 let result = sqlx::query_as!(User, "SELECT * FROM users")
     .fetch_all(&mut connection).await;
     result.unwrap()
+}
 ```
 
 The data can be accessed as an iterator  
