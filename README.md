@@ -27,6 +27,14 @@ If you want a light example you can try this.
 
 **Example**
 ```rust
+
+#[derive(Serialize, Deserialize, Debug, FromRow)]
+struct User { 
+    id: i64,
+    name: String,
+    age: i64,
+ }
+
 //async
 let result = sqlx::query_as!(User, "SELECT * FROM users")
     .fetch_all(&mut connection).await;
