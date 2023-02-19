@@ -33,17 +33,18 @@ let result = sqlx::query_as!(User, "SELECT * FROM users")
     result.unwrap()
 ```
 
-The data can be accessed as an iterator
-**dados.json**
+The data can be accessed as an iterator  
+**iterator**
 ```rust
 #[async_std::main]
 async fn main()  {
     for user in get_all().await {
         print!("{:?}",user)
     }
-}```
+}
+```
 
-##a How to use
+## How to use
 
 Clone this repositorio [Git](https://github.com/ricardodarocha/sqlx-sqlite.git) 
 Run `cargo check cargo run`
